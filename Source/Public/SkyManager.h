@@ -21,8 +21,10 @@ const double AU = 149597870.691;
 /** Earth equatorial radius in km. IERS 2003 Conventions. */
 const double EARTH_RADIUS = 6378.1366;
 
-/** Two times Pi. */
+/** Two times Pi. (Already declared in UE5) */
+#if ENGINE_MAJOR_VERSION < 5
 const double TWO_PI = 2.0 * PI;
+#endif
 
 /** Pi divided by two. */
 const double PI_OVER_TWO = PI / 2.0;
